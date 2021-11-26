@@ -24,6 +24,7 @@
 <!-- END: Page CSS-->
 <!-- BEGIN: Custom CSS-->
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 <link rel="stylesheet" type="text/css" href="assets/css/sweetalert2.min.css">
 <link rel="stylesheet" href="assets/css/animate.min.css" />
 <!-- END: Theme CSS-->

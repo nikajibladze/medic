@@ -127,12 +127,17 @@
 
                     </ul>
                 </li>
-                <!--
+<!--
                 <li class=" nav-item" id="user-info" onclick="VisitUserInfoTop(this.id)"><a href="#"
+                        onclick="prevent(event)"><i class="fa fa-book"></i><span
+                            class="menu-title">ცნობარი</span></a>
+                </li> -->
+
+                <!-- <li class=" nav-item" id="user-info" onclick="VisitUserInfoTop(this.id)"><a href="#"
                         onclick="prevent(event)"><i class="fa fa-bar-chart"></i><span
                             class="menu-title">ანგარიშგება</span></a>
-                </li>
--->
+                </li> -->
+
 
 
 

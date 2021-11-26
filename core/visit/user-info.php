@@ -12,13 +12,13 @@ if (isset($_POST["id"])) {
         $data["lastname"] = $users["last_name"];
         $data["personal"] = $users["personal_no"];
         $data["doctor"] = $users["doctor_name"];
-        $data["visit_number"] = $users["id"];
+        $data["visit_number"] = intval($users["id"]);
         $data["doctor_id"] = intval($users["doctor_id"]);
         $data["reg_date"] = date("Y-m-d", strtotime($users["reg_date"]));
-        $data["condition_type"] = $users["condition_type"];
-        $data["history_id"] = $users["history_id"];
+        $data["condition_type"] = intval($users["condition_type"]);
+        $data["history_id"] = intval($users["history_id"]);
     }
-    $statement_history = $db->prepare("SELECT id,rhesus,birth_date FROM patient_history where id=:history_id");
+    $statement_history = $db->prepare("SELECT id,rhesus,birth_date,gender FROM patient_history where id=:history_id");
     $statement_history->bindValue("history_id", $data["history_id"], PDO::PARAM_INT);
     $statement_history->execute();
     while ($history = $statement_history->fetch()) {
